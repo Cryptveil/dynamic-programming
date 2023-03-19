@@ -15,4 +15,4 @@ const fib = (n, memo = {}) => {
     return memo[n];
 }
 
-console.log(fib(150))
+console.log(fib(1000))
