@@ -32,3 +32,4 @@ console.log(canSum(7, [5, 3, 5, 7])); // true
 console.log(canSum(7, [2, 4])); // false
 console.log(canSum(8, [2, 3, 5])); // true
 console.log(canSum(300, [7, 14])); // false
+console.log(canSum(1000, [7, 14, 32, 55, 2, 1, 30])); // true
