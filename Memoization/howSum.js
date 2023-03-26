@@ -1,4 +1,4 @@
-// Recursive implementation
+// Recursive implementation - O(n^m * m)
 //const howSum = (targetSum, numbers) => {
 //    if (targetSum === 0) return [];
 //    if (targetSum < 0) return null;
@@ -13,7 +13,7 @@
 //    return null;
 //};
 
-// Memoized implementation
+// Memoized implementation - O(n*m^2)
 const howSum = (targetSum, numbers, memoObject = {}) => {
     if (targetSum in memoObject) return memoObject[targetSum];
     if (targetSum === 0) return [];
