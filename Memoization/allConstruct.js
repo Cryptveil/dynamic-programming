@@ -1,4 +1,4 @@
-// Recursive implementation
+// Recursive implementation - O(n^m)
 //const allConstruct = (targetString, wordBank) => {
 //    if (targetString === "") return [[]];
 //
@@ -15,7 +15,7 @@
 //    return result;
 //};
 
-// Memoized implementation
+// Memoized implementation - O(n^m)
 const allConstruct = (targetString, wordBank, memoObject = {}) => {
     if (targetString in memoObject) return memoObject[targetString];
     if (targetString === "") return [[]];
