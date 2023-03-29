@@ -1,4 +1,4 @@
-// Recursive implementation
+// Recursive implementation - O(n^m * m)
 //const canConstruct = (targetString, wordBank) => {
 //    if (targetString === "") return true;
 //    
@@ -11,7 +11,7 @@
 //    return false;
 //};
 
-// Memoized implementation
+// Memoized implementation - O(n * m^2)
 const canConstruct = (targetString, wordBank, memoObject = {}) => {
     if (targetString in memoObject) return memoObject[targetString];
     if (targetString === "") return true;
