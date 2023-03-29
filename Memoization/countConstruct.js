@@ -1,4 +1,4 @@
-// Recursive implementation - O()
+// Recursive implementation - O(n^m * m)
 //const countConstruct = (targetString, wordBank) => {
 //    if (targetString === "") return 1;
 //    let totalCount = 0;
@@ -11,7 +11,7 @@
 //    return totalCount;
 //};
 
-// Memoized implementation
+// Memoized implementation - O(n * m^2)
 const countConstruct = (targetString, wordBank, memoObject = {}) => {
     if (targetString in memoObject) return memoObject[targetString];
     if (targetString === "") return 1;
