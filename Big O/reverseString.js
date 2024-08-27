@@ -17,4 +17,16 @@ function reverse(string) {
     console.log(auxString.join(''));
 }
 
+// better way:
+
+function betterReverse(string) {
+    const size = string.length - 1;
+    if (!string || size < 2 || typeof string !== 'string') return 'not a string';
+    console.log(string.split('').reverse().join(''))
+}
+
+const evenBetterReverse = string => console.log([...string].reverse().join(''));
+
 reverse(string);
+betterReverse(string);
+evenBetterReverse(string);
